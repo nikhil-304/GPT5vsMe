@@ -5,5 +5,5 @@
 
 @font-face {
   font-family: 'Amsterdam_Four_Slant';
-  src: url('./fonts/Amsterdam_Four_Slant.ttf') format('truetype');
+  src: url('./fonts/Amsterdam_Four_Slant.otf') format('opentype');
 }
