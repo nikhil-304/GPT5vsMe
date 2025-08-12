@@ -1,12 +1,9 @@
 @font-face {
   font-family: 'JoyrideEXT';
-  src: url('/fonts/JoyrideEXT.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+  src: url('./fonts/JoyrideEXT.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Amsterdam_Four_Slant';
-  src: url('/fonts/Amsterdam_Four_Slant.ttf') format('truetype');
+  src: url('./fonts/Amsterdam_Four_Slant.ttf') format('truetype');
 }
-
