@@ -5,43 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
-  <title>Navbar</title>
+  <title>GPTvsMe Web Design Challenge</title>
 </head>
 <body>
-  <nav class="flex justify-between px-16 py-10">
-    <div id="nav1" class="flex justify-center items-center gap-20">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Pricing</a>
-      <a href="#">Contact</a>
-    </div>
-    <div id="nav2" class="flex items-center gap-10">
-      <a href="#">Login</a>
-      <button class="bg-black px-6 py-2 text-white rounded-xl">Sign Up</button>
-    </div>
-  </nav>
+  <div class="relative overflow-x-hidden">
+    <!-- Left half-circle -->
+    <div style="background-color: #00bedd;" class="blur-3xl opacity-20 absolute top-[30%] left-[-45vw] -translate-y-1/2 w-[60vw] h-[60vw] rounded-full z-[-1]"></div>
 
-  <section class="px-[20vw] py-[3vw]">
-    <h1 class="text-6xl font-['Amsterdam_Four_Slant'] ml-[3vw]">Premium</h1>
-    <h1 class="text-7xl ml-[7vw] font-['JoyrideEXT']">FRONT-END</h1>
-    <div id="icons" class="flex flex-wrap items-center justify-center gap-[8px] p-4 mt-[-1.5vw]">
-      <img src="./images/Figma.png" alt="Figma" class="mr-[-1vw] h-11 w-auto" />
-      <img src="./images/HTML.png" alt="HTML" class="mr-[-0.5vw] h-9 w-auto" />
-      <img src="./images/CSS.png" alt="CSS" class="mr-[-0.4vw] h-12 w-auto" />
-      <img src="./images/Tailwind.png" alt="Tailwind" class="mr-[-0.5vw] h-10 w-auto" />
-      <img src="./images/JavaScript.png" alt="JavaScript" class="mr-[-0.5vw] h-11 w-auto" />
-      <img src="./images/Lennis.png" alt="Lennis" class="mr-[-0.5vw] h-11 w-auto" />
-      <img src="./images/GSAP_2023.webp" alt="GSAP" class="h-5 w-auto" />
-      <img src="./images/Typescript.png" alt="TypeScript" class="h-9 w-auto" />
-      <img src="./images/React.png" alt="React" class="h-10 w-auto" />
-      <h1 class="text-7xl font-['Times_New_Roman'] font-bold italic ml-[0.5vw] mt-[-0.5vw]">Solutions</h1>
-    </div>
+    <!-- Right half-circle -->
+    <div style="background-color: #d9b700;" class="blur-3xl opacity-25 absolute top-[30%] right-[-45vw] -translate-y-1/2 w-[60vw] h-[60vw] rounded-full z-[-1]"></div>
+    <nav class="flex justify-between px-16 py-10">
+      <div id="nav1" class="flex justify-center items-center gap-20">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+      </div>
+      <div id="nav2" class="flex items-center gap-10">
+        <a href="#">Login</a>
+        <button class="bg-black px-6 py-2 text-white rounded-xl">Sign Up</button>
+      </div>
+    </nav>
 
-    <div class="text-center">
-      <p class="text-center text-2xl font-thin leading-[1.1] text-[1.6vw]">Crafting sleek, high-performance websites made by @Nikhil Shrivastava. <br> Your vision, brought to life with precision and style.</p>
-      <button class="bg-black px-8 py-2 text-white rounded-xl mt-5">Get Started</button>
-    </div>
-  </section>
+    <section class="px-[20vw] py-[3vw]">
+      <h1 class="text-6xl font-['Amsterdam_Four_Slant'] ml-[3vw]">Premium</h1>
+      <h1 class="text-7xl ml-[7vw] font-['JoyrideEXT']">FRONT-END</h1>
+      <div id="icons" class="flex flex-wrap items-center justify-center gap-[8px] p-4 mt-[-1.5vw]">
+        <img src="./images/Figma.png" alt="Figma" class="mr-[-1vw] h-11 w-auto" />
+        <img src="./images/HTML.png" alt="HTML" class="mr-[-0.5vw] h-9 w-auto" />
+        <img src="./images/CSS.png" alt="CSS" class="mr-[-0.4vw] h-12 w-auto" />
+        <img src="./images/Tailwind.png" alt="Tailwind" class="mr-[-0.5vw] h-10 w-auto" />
+        <img src="./images/JavaScript.png" alt="JavaScript" class="mr-[-0.5vw] h-11 w-auto" />
+        <img src="./images/Lennis.png" alt="Lennis" class="mr-[-0.5vw] h-11 w-auto" />
+        <img src="./images/GSAP_2023.webp" alt="GSAP" class="h-5 w-auto" />
+        <img src="./images/Typescript.png" alt="TypeScript" class="h-9 w-auto" />
+        <img src="./images/React.png" alt="React" class="h-10 w-auto" />
+        <h1 class="text-7xl font-['Times_New_Roman'] font-bold italic ml-[0.5vw] mt-[-0.5vw]">Solutions</h1>
+      </div>
+
+      <div class="text-center">
+        <p class="text-center text-2xl font-thin leading-[1.1] text-[1.6vw]">Crafting sleek, high-performance websites made by @Nikhil Shrivastava. <br> Your vision, brought to life with precision and style.</p>
+        <button class="bg-black px-8 py-2 text-white rounded-xl mt-5">Get Started</button>
+      </div>
+
+      <img src="./images/UI-Design.jpg" alt="UI-Design" class="mt-[9vh] rounded-3xl">
+    </section>
+  </div>
 
   <script src="script.js"></script>
 </body>
