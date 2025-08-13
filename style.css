@@ -5,5 +5,6 @@
 
 @font-face {
   font-family: 'Amsterdam_Four_Slant';
-  src: url('./fonts/Amsterdam_Four_Slant.otf') format('opentype');
+  src: url('./fonts/amsterdam_four_slant-webfont.woff2') format('woff2'),
+       url('./fonts/amsterdam_four_slant-webfont.woff') format('woff');
 }
