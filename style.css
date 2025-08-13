@@ -8,3 +8,7 @@
   src: url('./fonts/amsterdam_four_slant-webfont.woff2') format('woff2'),
        url('./fonts/amsterdam_four_slant-webfont.woff') format('woff');
 }
+
+.font-amsterdam {
+  font-family: 'Amsterdam_Four_Slant', sans-serif;
+}
