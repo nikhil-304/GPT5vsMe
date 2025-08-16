@@ -10,10 +10,10 @@
 <body>
   <div class="relative overflow-x-hidden">
     <!-- Left half-circle -->
-    <div style="background-color: #00bedd;" class="blur-3xl opacity-20 absolute top-[30%] left-[-45vw] -translate-y-1/2 w-[60vw] h-[60vw] rounded-full z-[-1]"></div>
+    <div id="left-circle" style="background-color: #00bedd;" class="blur-3xl opacity-20 absolute top-[30%] left-[-45vw] -translate-y-1/2 w-[60vw] h-[60vw] rounded-full z-[-1]"></div>
 
     <!-- Right half-circle -->
-    <div style="background-color: #d9b700;" class="blur-3xl opacity-25 absolute top-[30%] right-[-45vw] -translate-y-1/2 w-[60vw] h-[60vw] rounded-full z-[-1]"></div>
+    <div id="right-circle" style="background-color: #d9b700;" class="blur-3xl opacity-25 absolute top-[30%] right-[-45vw] -translate-y-1/2 w-[60vw] h-[60vw] rounded-full z-[-1]"></div>
     <nav class="flex justify-between px-16 py-10">
       <div id="nav1" class="flex justify-center items-center gap-20">
         <a href="#">Home</a>
@@ -27,23 +27,27 @@
       </div>
     </nav>
 
-    <section class="px-[20vw] py-[3vw]">
-      <h1 class="text-6xl font-amsterdam ml-[3vw]">Premium</h1>
-      <h1 class="text-7xl ml-[7vw] font-['JoyrideEXT']">FRONT-END</h1>
-      <div id="icons" class="flex flex-wrap items-center justify-center gap-[8px] p-4 mt-[-1.5vw]">
-        <img src="./images/Figma.png" alt="Figma" class="mr-[-1vw] h-11 w-auto" />
-        <img src="./images/HTML.png" alt="HTML" class="mr-[-0.5vw] h-9 w-auto" />
-        <img src="./images/CSS.png" alt="CSS" class="mr-[-0.4vw] h-12 w-auto" />
-        <img src="./images/Tailwind.png" alt="Tailwind" class="mr-[-0.5vw] h-10 w-auto" />
-        <img src="./images/JavaScript.png" alt="JavaScript" class="mr-[-0.5vw] h-11 w-auto" />
-        <img src="./images/Lennis.png" alt="Lennis" class="mr-[-0.5vw] h-11 w-auto" />
-        <img src="./images/GSAP_2023.webp" alt="GSAP" class="h-5 w-auto" />
-        <img src="./images/Typescript.png" alt="TypeScript" class="h-9 w-auto" />
-        <img src="./images/React.png" alt="React" class="h-10 w-auto" />
+    <section id="text-section" class="px-[20vw] py-[3vw] oveflow-hidden">
+      <div id="premium-txt" class="ml-[3vw]">
+        <h1 class="text-6xl font-amsterdam">Premium</h1>
+      </div>
+      <div id="frontend-txt" class="overflow-hidden ml-[7vw] w-fit h-fit">
+        <h1 class="text-7xl font-['JoyrideEXT'] leading-[80px]">FRONT-END</h1>
+      </div>
+      <div id="icons" class="flex flex-wrap items-center justify-center gap-[8px] p-4 mt-[-1.5vw] overflow-hidden">
+        <img src="./images/Figma.png" alt="Figma" class="icon mr-[-1vw] h-11 w-auto" />
+        <img src="./images/HTML.png" alt="HTML" class="icon mr-[-0.5vw] h-9 w-auto" />
+        <img src="./images/CSS.png" alt="CSS" class="icon mr-[-0.4vw] h-12 w-auto" />
+        <img src="./images/Tailwind.png" alt="Tailwind" class="icon mr-[-0.5vw] h-10 w-auto" />
+        <img src="./images/JavaScript.png" alt="JavaScript" class="icon mr-[-0.5vw] h-11 w-auto" />
+        <img src="./images/Lennis.png" alt="Lennis" class="icon mr-[-0.5vw] h-11 w-auto" />
+        <img src="./images/GSAP_2023.webp" alt="GSAP" class="icon h-5 w-auto" />
+        <img src="./images/Typescript.png" alt="TypeScript" class="icon h-9 w-auto" />
+        <img src="./images/React.png" alt="React" class="icon h-10 w-auto" />
         <h1 class="text-7xl font-['Times_New_Roman'] font-bold italic ml-[0.5vw] mt-[-0.5vw]">Solutions</h1>
       </div>
 
-      <div class="text-center">
+      <div id="btm-txt" class="text-center overflow-hidden">
         <p class="text-center text-2xl font-thin leading-[1.1] text-[1.6vw]">Crafting sleek, high-performance websites made by @Nikhil Shrivastava. <br> Your vision, brought to life with precision and style.</p>
         <button class="bg-black px-8 py-2 text-white rounded-xl mt-5">Get Started</button>
       </div>
@@ -52,6 +56,9 @@
     </section>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js" integrity="sha512-AcqPGqrrAEtEwe+ADO5R8RbdFi7tuU7b/A2cJJH0Im0D18NRk5p5s4B3E5PMuO81KFw0ClN7J5SHVUJz7KOb0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="script.js"></script>
 </body>
 </html>
